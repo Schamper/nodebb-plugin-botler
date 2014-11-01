@@ -1,0 +1,31 @@
+{
+	"name": "nodebb-plugin-botler",
+	"version": "0.0.1",
+	"description": "NodeBB Bot Plugin",
+	"main": "library.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Schamper/nodebb-plugin-botler"
+	},
+	"keywords": [
+		"nodebb",
+		"plugin",
+		"bot",
+		"botler",
+		"automation"
+	],
+	"author": "Schamper <mrwafflewaffle@aim.com>",
+	"license": "BSD-2-Clause",
+	"bugs": {
+		"url": "https://github.com/Schamper/nodebb-plugin-botler/issues"
+	},
+	"readme": "",
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"async": "~0.9.0",
+		"string": "~2.0.1"
+	}
+}

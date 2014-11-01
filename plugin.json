@@ -1,0 +1,17 @@
+{
+	"id": "nodebb-plugin-botler",
+	"name": "NodeBB Bot Plugin",
+	"description": "NodeBB automation plugin that will eventually allow admins to interactively create automated actions.",
+	"url": "https://github.com/Schamper/nodebb-plugin-botler",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "register.load" },
+		{ "hook": "filter:admin.header.build", "method": "register.admin.addNavigation" },
+
+		{ "hook": "action:post.save", "method": "triggers.posts.save.func" },
+		{ "hook": "action:post.upvote", "method": "triggers.posts.upvote.func" },
+		{ "hook": "action:post.downvote", "method": "triggers.posts.downvote.func" }
+	],
+	"templates": "./templates",
+	"minver": "0.5.0"
+}
